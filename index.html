@@ -9,6 +9,7 @@
 <script src="http://leafandmortar.com/wp-content/themes/kage-green/js/html5.js"></script>
 <![endif]-->
 	<style type="text/css">
+		@import url(./assets/animate.css);
 		@import url(./leafandmortar.com/wp-content/plugins/contact-form-7/includes/css/styles5859.css);
         @import url(./leafandmortar.com/wp-content/plugins/wpdiy/wpdiy-styles7bcd.css);
         @import url(./leafandmortar.com/wp-content/plugins/wpdiy/icons/style7bcd.css);
@@ -116,7 +117,7 @@
 								<div class="company-directory">
 									<h2>Company Directory</h2>
 									<p>Learn more about each person at Leaf &amp; Mortar in this company directory.</p>
-									<directory-filters></directory-filters>
+									<directory-filters @filter-people="updatePeopleList"></directory-filters>
 
 									<directory-people :people="people"></directory-people>
 								</div>
@@ -225,54 +226,12 @@
 					<p class="copyright">
 						Copyright © 2015 Leaf &amp; Mortar
 					</p>
-					<p class="designby">
-						Theme created by <a href="http://www.pwtthemes.com/">PWT</a>. Powered by <a href="http://wordpress.org/">WordPress.org</a>
-					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 </div>
-<aside class="super-header" role="banner">
-	<div class="wrapper">
-		<div class="lynda-logo wpdiy-item">
-			<a href="http://lynda.com/" title="Visit lynda.com" class="element-invisible">lynda.com</a>
-		</div>
 
-<!-- .lynda-logo -->
-		<div class="super-heading wpdiy-item">
-		</div>
-		<nav class="menu wpdiy-item" aria-label="Main menu">
-			<a class="info-trigger" href="#"> <i class="icon-info"></i> <span class="visuallyhidden"> Get more info about this site and the WordPress and Genesis DIY lynda.com course series. </span> </a>
-		</nav>
-
-<!-- super-menu -->
-	</div>
-<!-- .wrapper -->
-	<aside class="super-footer">
-		<div class="disclaimer">
-			<h3>
-				Disclaimer
-			</h3>
-			<p>
-				Leaf & Mortar Landscape Design and Architecture: This is a fictitious company created by LinkedIn Corporation, or its affiliates, solely for the creation and development of educational training materials. Any resemblance to real products or services is purely coincidental. Information provided about the products or services is also fictitious and should not be construed as representative of actual products or services on the market in a similar product or service category.
-			</p>
-		</div>
-<!-- .disclaimer -->
-		<div class="WPDIY-info">
-			<h3>
-				About the WordPress &plus; Genesis DIY series
-			</h3>
-			<p>
-				WordPress DIY is a collaborative lynda.com course series by authors Carrie Dils and Morten Rand-Hendriksen. This site is a live demo of the final site for one of the courses.
-			</p>
-			<div class="WPDIY-more">
-				<a href="http://lynda.com/">Learn More&hellip;</a>
-			</div>
-		</div>
-<!-- .WPDIY-info -->
-	</aside>
-</aside>
 <!-- .super-header -->
 <script type='text/javascript' src='./leafandmortar.com/wp-content/themes/kage-green/js/main5152.js?ver=1.0'>
 </script>
@@ -286,7 +245,7 @@ Polyfills for older browsers
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>window.Vue || document.write('<script src="./node_modules/vue/dist/vue.js"><\/script>')</script>
 
-<script src="./assets/ch03-data.js"></script>
+<script src="./assets/data.js"></script>
 <script src="directory.js"></script>
 
 </body>

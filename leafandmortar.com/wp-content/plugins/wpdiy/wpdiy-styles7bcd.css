@@ -27,11 +27,6 @@
  * Super header
  * ************************************************** */
 
-body {
-	/* Account for the height of the super-header */
-	margin-top: 58px!important;
-}
-
 .super-header {
 	position: fixed;
 	z-index: 100000;
